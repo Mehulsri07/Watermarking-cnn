@@ -1,0 +1,102 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# Model files (large files)
+*.h5
+*.hdf5
+*.pb
+*.ckpt
+*.pth
+*.pt
+
+# Training data
+train_images/*.jpg
+train_images/*.png
+test_images/*.jpg
+test_images/*.png
+validation/*.jpg
+validation/*.png
+coco_downloads/
+*.zip
+
+# Output files
+config_*/
+model_output/
+evaluation_results/
+*.log
+*.csv
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+temp/
+tmp/
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Documentation builds
+docs/_build/
+site/
+
+# Environment variables
+.env
+.env.local
+
+# Large datasets
+*.tar
+*.tar.gz
+*.tgz
+dataset/
+data/
+
+# Keep directory structure but ignore contents
+!train_images/.gitkeep
+!test_images/.gitkeep
+!validation/.gitkeep
+!config_1_baseline/.gitkeep
+!model_output/.gitkeep
+
+# Keep sample images for demo
+!train_images/sample_*.jpg
+!test_images/sample_*.jpg
