@@ -6,7 +6,7 @@ import urllib.request
 import os
 import sys
 
-def download_samples(num_train=80, num_test=20):
+def download_samples(num_train=20, num_test=5):
     """
     Download sample images from Lorem Picsum
     
@@ -52,8 +52,8 @@ def download_samples(num_train=80, num_test=20):
 
 if __name__ == "__main__":
     # Parse command line arguments
-    num_train = int(sys.argv[1]) if len(sys.argv) > 1 else 80
-    num_test = int(sys.argv[2]) if len(sys.argv) > 2 else 20
+    num_train = int(sys.argv[1]) if len(sys.argv) > 1 else 20
+    num_test = int(sys.argv[2]) if len(sys.argv) > 2 else 5
     
     print(f"\nConfiguration:")
     print(f"  Training images: {num_train}")

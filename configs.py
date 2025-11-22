@@ -13,8 +13,8 @@ WATERMARK_SIZE = (16 * 16,)     # Watermark size (256 bits = 16x16)
 # ============================================================================
 # TRAINING PARAMETERS
 # ============================================================================
-EPOCHS = 50                      # Number of training epochs (increase for better results)
-BATCH_SIZE = 10                  # Batch size (increase if you have more GPU memory)
+EPOCHS = 10                      # Number of training epochs (increase for better results)
+BATCH_SIZE = 2                   # Batch size (increase if you have more GPU memory)
 LEARNING_RATE = 0.001            # Learning rate for Adam optimizer
 
 # ============================================================================
