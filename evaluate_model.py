@@ -6,7 +6,11 @@ import sys
 import os
 
 # Add current directory to Python path to fix imports
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+script_dir = os.path.dirname(os.path.abspath(__file__))
+if script_dir not in sys.path:
+    sys.path.insert(0, script_dir)
+if os.getcwd() not in sys.path:
+    sys.path.insert(0, os.getcwd())
 
 import tensorflow as tf
 import numpy as np
