@@ -1,10 +1,15 @@
 """
 Simple script to embed and extract watermarks from images
 """
+import sys
+import os
+
+# Add current directory to Python path to fix imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import tensorflow as tf
 import numpy as np
 import cv2
-import os
 from configs import *
 from models.wavetf_model import WaveTFModel
 from utils.metrics import calculate_psnr, calculate_ssim, calculate_ber

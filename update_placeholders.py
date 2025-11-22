@@ -94,12 +94,12 @@ def main():
     print("="*70)
     print("\n1. Review the updated files")
     print("2. Upload to GitHub:")
-    print(f"   git remote add origin https://github.com/{github_username}/watermark-cnn.git")
+    print(f"   git remote add origin https://github.com/{github_username}/Watermarking-cnn.git")
     print("   git add .")
     print("   git commit -m 'Initial commit'")
     print("   git push -u origin main")
     print("\n3. Open in Colab:")
-    print(f"   https://colab.research.google.com/github/{github_username}/watermark-cnn/blob/main/watermark_colab.ipynb")
+    print(f"   https://colab.research.google.com/github/{github_username}/Watermarking-cnn/blob/main/watermark_colab.ipynb")
     print("\n" + "="*70)
 
 if __name__ == "__main__":

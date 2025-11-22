@@ -2,9 +2,14 @@
 Integrated training and evaluation script
 Trains the model and automatically evaluates it with all attacks
 """
+import sys
+import os
+
+# Add current directory to Python path to fix imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import tensorflow as tf
 import numpy as np
-import os
 from datetime import datetime
 from configs import *
 from models.wavetf_model import WaveTFModel

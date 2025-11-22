@@ -2,10 +2,15 @@
 Comprehensive model evaluation with metrics, attack tracking, and visualizations
 Generates a detailed report with before/after images
 """
+import sys
+import os
+
+# Add current directory to Python path to fix imports
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
-import os
 import json
 from datetime import datetime
 from configs import *

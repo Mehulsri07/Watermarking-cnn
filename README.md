@@ -31,34 +31,36 @@ A deep learning-based image watermarking system that embeds invisible watermarks
 
 ### Google Colab (Recommended - No Installation!)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mehulsri07/watermark-cnn/blob/main/watermark_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mehulsri07/Watermarking-cnn/blob/main/watermark_colab.ipynb)
 
-1. Click the badge above to open in Colab
-2. Enable GPU: Runtime → Change runtime type → GPU → Save
-3. Run all cells (Runtime → Run all)
-4. Done! Results in ~10 minutes
+1. Click the badge above
+2. Enable GPU: Runtime → Change runtime type → GPU
+3. Run all cells
+4. Done in ~10 minutes!
 
 ### Local Installation
 
 ```bash
-# Clone repository
-git clone https://github.com/Mehulsri07/watermark-cnn.git
-cd watermark-cnn
-
-# Install dependencies
+# Clone and setup
+git clone https://github.com/Mehulsri07/Watermarking-cnn.git
+cd Watermarking-cnn
 pip install -r requirements.txt
 
-# Add your images to train_images/ and test_images/ folders
-# Or download samples automatically (see notebook)
+# Download sample images
+python download_samples.py
 
 # Train and evaluate
 python train_and_evaluate.py
+
+# Or use quick run script
+# Windows: run.bat
+# Linux/Mac: ./run.sh
 ```
 
 ## 📁 Project Structure
 
 ```
-watermark-cnn/
+Watermarking-cnn/
 ├── models/                      # Model architectures
 │   └── wavetf_model.py         # Main watermarking model
 ├── attacks/                     # Attack implementations
@@ -200,11 +202,7 @@ class CustomAttack(BaseAttack):
 
 ## 📚 Documentation
 
-- [Quick Start Guide](QUICK_START.txt) - Get started in 5 minutes
-- [Google Colab Guide](COLAB_README.md) - Cloud training instructions
-- [Attack System](ATTACKS_README.md) - Attack implementation details
-- [Evaluation Guide](EVALUATION_GUIDE.md) - Metrics and analysis
-- [Model Architecture](MODEL_CHECKPOINTS_INFO.md) - Model details
+All documentation is included in the Colab notebook and this README.
 
 ## 🛠️ Requirements
 
@@ -273,9 +271,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-For questions or issues, please open an issue on GitHub or contact:
-- Email: meulsri.0701@gmail.com
 - GitHub: [@Mehulsri07](https://github.com/Mehulsri07)
+- Issues: [Open an issue](https://github.com/Mehulsri07/Watermarking-cnn/issues)
 
 ## 📖 Citation
 
@@ -286,30 +283,16 @@ If you use this code in your research, please cite:
   title={CNN-Based Image Watermarking using Discrete Wavelet Transform},
   author={Mehul Srivastava},
   year={2025},
-  url={https://github.com/Mehulsri07/watermark-cnn}
+  url={https://github.com/Mehulsri07/Watermarking-cnn}
 }
 ```
 
-## 🔗 Related Projects
-
-- [Deep Learning Watermarking](https://github.com/example/dl-watermark)
-- [Robust Watermarking](https://github.com/example/robust-watermark)
-- [Frequency Domain Watermarking](https://github.com/example/freq-watermark)
-
 ## 📊 Project Status
 
-- ✅ Core functionality implemented
-- ✅ 7 attack types supported
-- ✅ Comprehensive evaluation system
-- ✅ Google Colab integration
-- ✅ Documentation complete
-- 🔄 Ongoing improvements and optimizations
-
-## 🎓 Learning Resources
-
-- [Deep Learning for Computer Vision](https://www.coursera.org/learn/deep-learning-computer-vision)
-- [Digital Watermarking Techniques](https://example.com/watermarking)
-- [TensorFlow Documentation](https://www.tensorflow.org/tutorials)
+✅ Core functionality complete  
+✅ 7 attack types supported  
+✅ Google Colab ready  
+✅ Fully documented
 
 ---
 
