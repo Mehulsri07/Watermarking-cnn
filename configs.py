@@ -13,9 +13,10 @@ WATERMARK_SIZE = (16 * 16,)     # Watermark size (256 bits = 16x16)
 # ============================================================================
 # TRAINING PARAMETERS
 # ============================================================================
-EPOCHS = 10                      # Number of training epochs (increase for better results)
-BATCH_SIZE = 2                   # Batch size (increase if you have more GPU memory)
+EPOCHS = 60                      # Number of training epochs (increase for better results)
+BATCH_SIZE = 10                 # Batch size (increase if you have more GPU memory)
 LEARNING_RATE = 0.001            # Learning rate for Adam optimizer
+TRAIN_IMAGES_COUNT = 10000       # Number of training images to use (118,287 available)
 
 # ============================================================================
 # LOSS WEIGHTS
@@ -40,7 +41,7 @@ ATTACK_MAX_ID = 6  # Maximum attack ID (0 to 6 = 7 attack types)
 # PATHS
 # ============================================================================
 MODEL_OUTPUT_PATH = 'config_1_baseline/'
-TRAIN_IMAGES_PATH = 'train_images/'
+TRAIN_IMAGES_PATH = '../train_images/'  # Parent folder with 118,287 images
 TEST_IMAGES_PATH = 'test_images/'
 
 # Create directories if they don't exist

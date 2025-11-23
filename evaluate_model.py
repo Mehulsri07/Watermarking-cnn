@@ -76,11 +76,11 @@ class WatermarkEvaluator:
         # Prepare inputs
         image_batch = np.expand_dims(image, axis=0)
         watermark_batch = np.expand_dims(watermark, axis=0)
-        attack_id_batch = np.array([[attack_id]], dtype=np.int32)
+        # Note: attack_id not used in model - attacks applied externally if needed
         
         # Get predictions
         watermarked_image, extracted_watermark = self.model.predict(
-            [image_batch, watermark_batch, attack_id_batch],
+            [image_batch, watermark_batch],
             verbose=0
         )
         

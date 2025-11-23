@@ -20,8 +20,8 @@ class WaveTFFactory:
             A DWT or IDWT layer instance
         """
         if inverse:
-            # splited=1 means input has 4 separate channels [ll, lh, hl, hh]
-            return IDWT(wavelet_name=wavelet_type, splited=1)
+            # concat=0 means input has 4 separate channels [ll, lh, hl, hh] concatenated
+            return IDWT(wavelet_name=wavelet_type, concat=0)
         else:
-            # concat=0 means output 4 channels [ll, lh, hl, hh]
+            # concat=0 means output 4 channels [ll, lh, hl, hh] concatenated
             return DWT(wavelet_name=wavelet_type, concat=0)
