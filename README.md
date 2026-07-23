@@ -1,60 +1,26 @@
-# CNN-Based Image Watermarking
+# DWT+CNN Image Watermarking 🖼️🔐
 
-Deep learning watermarking system using CNNs and Discrete Wavelet Transform.
+A deep learning-based digital image watermarking system that utilizes Discrete Wavelet Transform (DWT) and Convolutional Neural Networks (CNNs). This repository contains the architecture, training scripts, and implementation codebase accompanying our co-authored IEEE research paper.
 
-## Quick Start
+## 🚀 Overview
 
-### Kaggle (Recommended)
-1. Upload `watermark_kaggle.ipynb` to Kaggle
-2. Enable GPU (Settings → GPU T4 x2)
-3. Run all cells
+Digital asset protection requires watermarks that are invisible to the human eye but robust enough to survive image manipulation and compression. This project leverages the mathematical precision of frequency-domain embedding (DWT) alongside the feature-extraction power of deep generative AI (CNNs) to create a highly secure, non-destructive watermarking protocol.
 
-### Google Colab
-1. Upload `watermark_colab.ipynb` to Colab
-2. Enable GPU (Runtime → GPU)
-3. Run all cells
+## ✨ Key Features
 
-### Local
-```bash
-pip install -r requirements.txt
-python download_samples.py
-python train_and_evaluate.py
-```
+* **Frequency-Domain Embedding:** Utilizes Discrete Wavelet Transform to embed data securely within the high and low-frequency bands of an image.
+* **Deep Learning Extraction:** A custom-trained Convolutional Neural Network designed to recover hidden watermarks even after image distortion.
+* **High Imperceptibility:** Ensures visual fidelity of the original host image remains completely intact.
+* **Robustness:** Resilient against common image processing attacks such as cropping, noise addition, and JPEG compression.
 
-## Files
+## 🛠️ Tech Stack
 
-**Notebooks:**
-- `watermark_kaggle.ipynb` - Kaggle notebook
-- `watermark_colab.ipynb` - Colab notebook
+* **Language:** Python 3.x
+* **Deep Learning Framework:** TensorFlow / Keras (or PyTorch)
+* **Image Processing:** OpenCV, SciPy, NumPy
+* **Research Standard:** Architected for journal-grade evaluation and benchmarking.
 
-**Core Scripts:**
-- `train_and_evaluate.py` - Train and evaluate
-- `trainer.py` - Training only
-- `evaluate_model.py` - Evaluation only
-- `embed_and_extract.py` - Embed/extract watermarks
-- `download_samples.py` - Download sample images
-- `configs.py` - Configuration
+## 📦 Getting Started
 
-**Modules:**
-- `models/` - Model architectures
-- `attacks/` - Attack implementations
-- `data_loaders/` - Data loading
-- `utils/` - Utilities
-
-## Configuration
-
-Edit `configs.py`:
-```python
-EPOCHS = 10
-BATCH_SIZE = 2
-```
-
-## Requirements
-
-- Python 3.8+
-- TensorFlow 2.8+
-- See `requirements.txt`
-
-## License
-
-MIT License
+1. **Clone the repository:**
+   ```bash
